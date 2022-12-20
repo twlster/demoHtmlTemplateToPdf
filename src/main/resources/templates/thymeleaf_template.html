@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{classpath:static/css/style.css}"/>
+</head>
+<body class="body-marca">
+    <div id="header">
+        <h2 id="headerText" th:text="${header}"></h2>
+    </div>
+    <h3>
+        <span th:text="'Welcome to ' + ${to} + '!'"></span>
+    </h3>
+    <img th:src="@{classpath:static/images/javaLogo.png}" width="50%"/>
+    <div id="footer">
+        <p id="foot" th:text="${pie}"></p>
+        <p id="pagination">Pagina <span id="pagenumber"></span> de <span id="pagecount"></span></p>
+    </div>
+</body>
+</html>

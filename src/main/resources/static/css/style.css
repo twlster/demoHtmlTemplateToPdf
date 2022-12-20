@@ -1,0 +1,62 @@
+#footer {
+    position: fixed;
+    bottom: 0;
+}
+
+#foot{
+    color: gray;
+    text-align: center;
+}
+
+#pagination {
+    color: gray;
+    text-align: right;
+}
+
+@page {
+    @bottom-center {
+        content: element(footer);
+    }
+}
+
+#pagenumber:before {
+    content: counter(page);
+}
+
+#pagecount:before {
+    content: counter(pages);
+}
+
+#header {
+  top: 0;
+}
+
+#headerText {
+  text-align: center;
+  color: red;
+}
+
+
+h3 {
+    text-align: center;
+    color: green;
+}
+
+.body-marca {
+  min-height: 300vh;
+  position: relative;
+  margin: 0;
+}
+
+.body-marca:before {
+  content: "";
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:
+    url('data:image/svg+xml;utf8,<svg style="transform:rotate(-45deg)" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 60"><text x="0" y="25" fill="%23000">Lorem </text></svg>')
+    0 0/100% 100vh;
+}
